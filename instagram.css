@@ -1,0 +1,291 @@
+/* adding variables */
+:root {
+    --background-color: #fafafa;
+    --white: #ffffff;
+    --border-color: 112, 112, 112;
+    --placeholder-color: #837979;
+    --or-text: #8e8e8e;
+    --fb-logo: #2e3b57cc;
+    --log-in-button: #3495bbe7;
+    --black: #262626;
+    --footer-links: #3f42448f;
+    --copyright-gray: #bfbfbf;
+  }
+  /* overwite browser default */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 p {
+    font-weight: 700;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style-type: none;
+  }
+  html {
+    font-size: 63.5;
+  }
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--background-color);
+  }
+  
+  /* ----------------log in --------------------*/
+  /* log-in_container */
+  .login {
+    background: var(--white);
+    width: 30rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.1rem solid rgb(var(--border-color), 0.5);
+    padding: 0.9rem 5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  /* logo */
+  .logo {
+    width: 11rem;
+    margin-bottom: 2rem;
+  }
+  /* log in form */
+  .log-in-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  /* style for login button and the form */
+  .log-in-form input,
+  .log-in-button {
+    padding: 0.8rem 0 0.8rem 0.8rem;
+    border-radius: 0.5rem;
+  }
+  /* styles for placeholders in form */
+  .log-in-forminput,
+  .log-in-form input::placeholder {
+    font-size: 0.8rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  /* form */
+  .log-in-form input {
+    background: var(--background-color);
+    border: 0.1rem solid rgb(var(--border-color), 0.5);
+    outline: none;
+  }
+  /* styles for username text */
+  .log-in-form input[type="text"] {
+    margin-bottom: 0.5rem;
+  }
+  /* for placeholders */
+  .log-in-form input::placeholder {
+    color: var(--placeholder-color);
+  }
+  /* style for the text field */
+  .log-in-form input:focus {
+    border-color: rgb(var(--border-color), 0.8);
+  }
+  
+  /* log-in button */
+  .log-in-button {
+    background: var(--log-in-button);
+    color: var(--white);
+    margin: 1rem 0;
+    font-weight: 400;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+  /* or divider */
+  .or-dividor {
+    color: var(--or-text);
+    font-weight: 700;
+    position: relative;
+    font-size: 1.2rem;
+  }
+  .or-dividor::before,
+  .or-dividor::after {
+    content: "";
+    display: block;
+    width: 11rem;
+    height: 0.1rem;
+    position: absolute;
+    background: rgb(var(--border-color), 0.4);
+    top: 50%;
+  }
+  .or-dividor::before {
+    left: 3rem;
+  }
+  .or-dividor::after {
+    right: 3rem;
+  }
+  
+  /* log in with facebook */
+  .fb-login {
+    margin: 1.5rem 0;
+  }
+  
+  .fb-login img,
+  .fb-login span {
+    vertical-align: middle;
+  }
+  .fb-login img {
+    width: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  .fb-login span {
+    font-size: 1.2rem;
+    color: rgb(var(--fb-logo));
+    font-weight: 700;
+  }
+  /* forgot password */
+  .forgot-password {
+    color: var(--fb-logo);
+    font-size: 0.8rem;
+  }
+  
+  /*---------------- sign-up------------------- */
+  /* sign-up-container */
+  .sign-up {
+    background: var(--white);
+    width: 30rem;
+    margin: 0 auto;
+    border: 0.1rem solid rgb(var(--border-color), 0.5);
+    padding: 2rem;
+    text-align: center;
+  }
+  /* Dont have account */
+  .sign-up span {
+    font-size: 0.9rem;
+    margin-right: 0.4rem;
+  }
+  /* sign-up link */
+  .sign-up a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--log-in-button);
+  }
+  /* ---------------Get the app--------------- */
+  /* get the app  */
+  .get-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35rem;
+    margin: 0 auto;
+    margin-top: 1.5 rem;
+  }
+  /* get the app text */
+  .get-app span {
+    display: block;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+  }
+  /* playstore and apple badges */
+  .app-img img {
+    width: 13rem;
+  }
+  /* select the first image */
+  .app-img img:nth-child(1) {
+    margin-right: 1 rem;
+  }
+  /* -----------phones------------ */
+  .phones-containner {
+    display: none;
+  }
+
+  /* -----------footer------------ */
+  footer {
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto 0 auto;
+    padding: 5rem;
+  }
+  /* unorderd list */
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  .footer-links li {
+    flex-basis: 10%;
+    text-align: center;
+  }
+  .footer-links a {
+    color: var(--footer-links);
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  .copyright {
+    text-align: center;
+    color: var(--copyright-gray);
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  
+  /* to make the page responsive */
+  @media screen and (min-width: 876px) {
+    main {
+      display: flex;
+      justify-content: center;
+      padding-top: 3rem;
+    }
+    .phones-containner {
+      display: initial;
+    }
+    .log-in-container {
+      order: 1;
+    }
+    footer {
+      width: 100%;
+      justify-content: flex-start;
+      padding-left: 6rem;
+      padding-bottom: 4rem;
+      position: absolute;
+      left: 10rem;
+    }
+    #second {
+      position: relative;
+      left: 5rem;
+    }
+    .footer-links {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+    .footer-links li {
+      flex-basis: auto;
+      margin-right: 1rem;
+    }
+    .footer-links a {
+      margin-bottom: 0;
+    }
+    .copyright {
+      text-align: left;
+    }
+    #third {
+      position: relative;
+      left: 15rem;
+    }
+  }
+  /* desktop */
+  @media screen and (min-width: 1527px) {
+    footer {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+  
